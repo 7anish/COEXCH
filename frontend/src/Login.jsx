@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import emailjs from '@emailjs/browser'
-import video from './assets/video.webm'
 
 const LoginPage = () => {
   const [showDemoForm, setShowDemoForm] = useState(false);
@@ -45,22 +44,8 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen ">
-      <video
-        src={video}
-        autoPlay
-        loop
-        muted
-        className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
-      ></video>
-      <div className="mb-6">
-        <img
-          src="https://sitethemedata.com/sitethemes/coexch9.co/front/logo.png"
-          alt="Logo"
-          className="h-16"
-        />
-      </div>
-      <div className="bg-white p-6 rounded-lg shadow-lg w-96">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-back bg-cover  bg-no-repeat">
+      <div className="bg-white p-6 rounded-lg shadow-lg sm:w-96 w-[300px]">
         <h2 className="text-center text-xl font-bold mb-4">
           Login <i className="fas fa-hand-point-down"></i>
         </h2>
@@ -101,16 +86,16 @@ const LoginPage = () => {
             type="submit"
             className="w-full bg-black text-white py-2 rounded shadow hover:bg-gray-800 transition"
           >
-            Login <i className="fas fa-sign-in-alt ml-2"></i>
+            <a href="https://wa.me/918882584667?text=Hi,%0Aplease%20give%20my%20account">Login</a>
           </button> */}
         </form>
 
         <button
           type="button"
-          onClick={() => setShowDemoForm(true)}
+          // onClick={() => setShowDemoForm(true)}
           className="w-full bg-black text-white py-2 mt-4 rounded shadow hover:bg-gray-800 transition"
         >
-          Login with Demo ID <i className="fas fa-sign-in-alt ml-2"></i>
+          <a href="https://wa.me/919289668316?text=Hi,%0Aplease%20give%20my%20account">Login</a>with Demo ID <i className="fas fa-sign-in-alt ml-2"></i>
         </button>
 
         <small className="block mt-4 text-xs text-gray-500 text-center">
