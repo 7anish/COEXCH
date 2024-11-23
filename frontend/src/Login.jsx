@@ -45,8 +45,8 @@ const LoginPage = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-back bg-cover  bg-no-repeat">
-      <div className="bg-white p-6 rounded-lg shadow-lg sm:w-96 w-[300px]">
-        <h2 className="text-center text-xl font-bold mb-4">
+      <div className="bg-white p-6 rounded-lg shadow-lg sm:w-96 w-[300px] translate-y-5 flex flex-col">
+        <h2 className="text-center text-xl font-bold mb-4 ">
           Login <i className="fas fa-hand-point-down"></i>
         </h2>
         <form>
@@ -81,22 +81,15 @@ const LoginPage = () => {
               </span>
             </div>
           </div>
-
-          {/* <button
-            type="submit"
-            className="w-full bg-black text-white py-2 rounded shadow hover:bg-gray-800 transition"
-          >
-            <a href="https://wa.me/918882584667?text=Hi,%0Aplease%20give%20my%20account">Login</a>
-          </button> */}
         </form>
 
-        <button
+        <a
+          href="https://wa.me/919289668316?text=Hi,%0Aplease%20give%20my%20account"
           type="button"
-          // onClick={() => setShowDemoForm(true)}
-          className="w-full bg-black text-white py-2 mt-4 rounded shadow hover:bg-gray-800 transition"
+          className="w-full p-1 bg-black text-white text-center py-2 font-medium capitalize"
         >
-          <a href="https://wa.me/919289668316?text=Hi,%0Aplease%20give%20my%20account">Login</a>with Demo ID <i className="fas fa-sign-in-alt ml-2"></i>
-        </button>
+          Login with Demo ID
+        </a>
 
         <small className="block mt-4 text-xs text-gray-500 text-center">
           This site is protected by reCAPTCHA and the Google{" "}
