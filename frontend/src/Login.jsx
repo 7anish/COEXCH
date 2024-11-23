@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from '@emailjs/browser'
+import video from './assets/video.webm'
 
 const LoginPage = () => {
   const [showDemoForm, setShowDemoForm] = useState(false);
@@ -44,7 +45,14 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-black to-orange-800">
+    <div className="flex flex-col items-center justify-center min-h-screen ">
+      <video
+        src={video}
+        autoPlay
+        loop
+        muted
+        className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
+      ></video>
       <div className="mb-6">
         <img
           src="https://sitethemedata.com/sitethemes/coexch9.co/front/logo.png"
@@ -89,12 +97,12 @@ const LoginPage = () => {
             </div>
           </div>
 
-          <button
+          {/* <button
             type="submit"
             className="w-full bg-black text-white py-2 rounded shadow hover:bg-gray-800 transition"
           >
             Login <i className="fas fa-sign-in-alt ml-2"></i>
-          </button>
+          </button> */}
         </form>
 
         <button

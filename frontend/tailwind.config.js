@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage : {
+        "back" : "url(/src/assets/back.png)"
+      }
+    },
   },
   plugins: [],
 }
