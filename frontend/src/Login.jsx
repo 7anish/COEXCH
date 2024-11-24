@@ -44,9 +44,9 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-back bg-cover  bg-no-repeat">
-      <div className="bg-white p-6 rounded-lg shadow-lg sm:w-96 w-[300px] translate-y-5 flex flex-col">
-        <h2 className="text-center text-xl font-bold mb-4 ">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-phone sm:bg-back  bg-no-repeat bg bg-cover">
+      <div className="bg-white/50 backdrop-blur-md p-6 rounded-lg shadow-lg sm:w-96 w-[300px] sm:translate-y-0 -translate-y-20 flex flex-col">
+        <h2 className="text-center text-xl font-bold mb-4">
           Login <i className="fas fa-hand-point-down"></i>
         </h2>
         <form>
@@ -90,27 +90,8 @@ const LoginPage = () => {
         >
           Login with Demo ID
         </a>
-
-        <small className="block mt-4 text-xs text-gray-500 text-center">
-          This site is protected by reCAPTCHA and the Google{" "}
-          <a
-            href="https://policies.google.com/privacy"
-            className="text-orange-600 underline"
-          >
-            Privacy Policy
-          </a>{" "}
-          and{" "}
-          <a
-            href="https://policies.google.com/terms"
-            className="text-orange-600 underline"
-          >
-            Terms of Service
-          </a>{" "}
-          apply.
-        </small>
       </div>
 
-      {/* Demo Login Form */}
       {showDemoForm && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg w-96">
