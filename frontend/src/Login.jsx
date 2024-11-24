@@ -45,7 +45,7 @@ const LoginPage = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-phone sm:bg-back  bg-no-repeat bg bg-cover">
-      <div className="bg-white/50 backdrop-blur-md p-6 rounded-lg shadow-lg sm:w-96 w-[300px] sm:translate-y-0 -translate-y-20 flex flex-col">
+      <div className="bg-white/50 backdrop-blur-md p-6 rounded-lg shadow-lg sm:w-96 w-[300px] sm:translate-y-0  flex flex-col -translate-y-56">
         <h2 className="text-center text-xl font-bold mb-4">
           Login <i className="fas fa-hand-point-down"></i>
         </h2>
